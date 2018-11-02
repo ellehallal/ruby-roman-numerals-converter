@@ -23,4 +23,9 @@ RSpec.describe RomanNumerals do #testing converter class
     roman_numerals = RomanNumerals.new
     expect(roman_numerals.convert(3)).to eq('III')
   end
+
+  it 'converts 4 to "IV"' do
+    roman_numerals = RomanNumerals.new
+    expect(roman_numerals.convert(4)).to eq('IV')
+  end
 end
