@@ -23,14 +23,14 @@ class RomanNumerals
     }
 
     roman.each do |key, value|
-      p "number: #{number}"
-      p "key: #{key}"
-      p "value: #{value}"
+      # p "number: #{number}"
+      # p "key: #{key}"
+      # p "value: #{value}"
 
       while number >= key
          final << value
          number -= key
-         p "number after minus: #{number}"
+         # p "number after minus: #{number}"
       end
     end
 

@@ -35,4 +35,24 @@ RSpec.describe RomanNumerals do #testing converter class
     expect(roman_numerals.convert(11)).to eq("XI")
   end
 
+  it 'converts 11 to "XI"' do
+    roman_numerals = RomanNumerals.new
+    expect(roman_numerals.convert(11)).to eq("XI")
+  end
+
+  it 'converts 257 to "CCLVII"' do
+    roman_numerals = RomanNumerals.new
+    expect(roman_numerals.convert(257)).to eq("CCLVII")
+  end
+
+  it 'converts 1986 to "MCMLXXXVI"' do
+    roman_numerals = RomanNumerals.new
+    expect(roman_numerals.convert(1986)).to eq("MCMLXXXVI")
+  end
+
+  it 'converts 68992 to "MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMCMXCII"' do
+    roman_numerals = RomanNumerals.new
+    expect(roman_numerals.convert(68992)).to eq("MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMCMXCII")
+  end
+
 end
