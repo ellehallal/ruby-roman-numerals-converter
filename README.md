@@ -1,4 +1,4 @@
 # Number to Roman Numerals converter
 
 ### Task ###
-Write a function to convert from normal numbers to Roman Numerals
+Write a program that takes a number and converts it to a roman numeral
