@@ -19,20 +19,18 @@ class RomanNumerals
       6 => "VI",
       5 => "V",
       4 => "IV",
-      3 => "III",
-      2 => "II",
       1 => "I"
     }
 
     roman.each do |key, value|
-      # p number
-      # p key
-      # p value
+      p "number: #{number}"
+      p "key: #{key}"
+      p "value: #{value}"
 
       while number >= key
          final << value
-         number =- key
-         p number
+         number -= key
+         p "number after minus: #{number}"
       end
     end
 

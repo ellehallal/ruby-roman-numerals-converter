@@ -9,10 +9,10 @@ RSpec.describe RomanNumerals do #testing converter class
   #   #converter, expecting an empty string returned
   # end
 
-  it 'converts 1 to "I"'do
-    roman_numerals = RomanNumerals.new
-    expect(roman_numerals.convert(1)).to eq('I')
-  end
+  # it 'converts 1 to "I"'do
+  #   roman_numerals = RomanNumerals.new
+  #   expect(roman_numerals.convert(1)).to eq('I')
+  # end
 
   it 'converts 2 to "II"' do
     roman_numerals = RomanNumerals.new
