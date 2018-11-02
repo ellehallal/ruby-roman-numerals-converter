@@ -1,7 +1,5 @@
 class RomanNumerals
   def convert(number)
-  # roman = ["III", "II", "I"]
-  # numbers = [3, 2, 1]
     final = []
     roman = {
       1000 => "M",
@@ -23,14 +21,9 @@ class RomanNumerals
     }
 
     roman.each do |key, value|
-      # p "number: #{number}"
-      # p "key: #{key}"
-      # p "value: #{value}"
-
       while number >= key
          final << value
          number -= key
-         # p "number after minus: #{number}"
       end
     end
 
