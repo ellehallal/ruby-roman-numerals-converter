@@ -29,4 +29,10 @@ RSpec.describe RomanNumerals do #testing converter class
       expect(roman_numerals.convert(num)).to eq(symbol)
     end
   end
+
+  it 'converts 11 to "XI"' do
+    roman_numerals = RomanNumerals.new
+    expect(roman_numerals.convert(11)).to eq("XI")
+  end
+
 end
